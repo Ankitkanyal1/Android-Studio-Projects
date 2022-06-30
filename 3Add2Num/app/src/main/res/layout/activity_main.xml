@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView_firstN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="First Number"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textView_SecondN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/editText_firstN"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Second Number"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/editText_firstN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Eg:1"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textView_firstN"
+
+        android:inputType="number" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/editText_SecondN"
+        android:layout_width="100dp"
+        android:layout_below="@id/editText_firstN"
+        android:layout_marginTop="20dp"
+        android:hint="Eg:2"
+        android:textColorHint="@color/white"
+        android:layout_toRightOf="@id/textView_SecondN"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/black"
+        android:layout_below="@id/editText_SecondN"
+        android:text="Add" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView_ans"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="33dp"
+        android:layout_below="@id/add_button"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

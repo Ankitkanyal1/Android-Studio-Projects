@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">A2N</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+</resources>
